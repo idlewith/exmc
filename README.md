@@ -57,8 +57,6 @@ so, you need copy raw markdown table string
 
 then paste to excel file
 
-
-
 ## Contributing
 
 Contributions are very welcome.

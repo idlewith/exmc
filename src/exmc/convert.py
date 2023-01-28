@@ -1,4 +1,6 @@
+"""The main functions to convert excel to markdown or markdown to excel."""
 import clipboard
+
 
 BREAK_N = "\n"
 BREAK_RN = "\r\n"
@@ -9,6 +11,7 @@ SEPERATOR_VERTICAL_LINE = "|"
 
 
 def join_with_vertical_line(cells):
+    """Join with vertical line."""
     cell_list = []
     for cell in cells:
         cell = cell.strip()
@@ -24,6 +27,7 @@ def join_with_vertical_line(cells):
 
 
 def excel2markdown(args):
+    """Excel to markdown."""
     content = clipboard.paste()
 
     if args.debug == "true":
@@ -56,6 +60,7 @@ def excel2markdown(args):
 
 
 def markdown2excel(args):
+    """Markdown to excel."""
     content = clipboard.paste()
 
     if args.debug == "true":
@@ -83,6 +88,7 @@ def markdown2excel(args):
 
 
 def run(args):
+    """Execute convert functions by args.reverse."""
     if args.reverse == "true":
         markdown2excel(args)
     else:
