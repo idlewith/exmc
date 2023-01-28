@@ -9,7 +9,7 @@ homepage = "https://github.com/idlewith/exmc"
 repository = "https://github.com/idlewith/exmc"
 documentation = "https://exmc.readthedocs.io"
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
 ]
 
 [tool.poetry.urls]
