@@ -1,12 +1,16 @@
 """Command-line interface."""
-import click
+import argparse
+from exmc.convert import run
 
 
-@click.command()
-@click.version_option()
 def main() -> None:
     """Excel Markdown Converter."""
-
-
-if __name__ == "__main__":
-    main(prog_name="exmc")  # pragma: no cover
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-d", "--debug", help="print origin text from excel or markdown"
+    )
+    parser.add_argument(
+        "-r", "--reverse", help="convert markdown table str to excel str"
+    )
+    args = parser.parse_args()
+    run(args)

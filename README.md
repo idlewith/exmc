@@ -23,7 +23,7 @@
 
 - copy excel content from clipboard, so you need paste excel content to clipboard
 - type `exmc` to convert excel string to markdown table string
-- [ ] convert markdown table string to excel string
+- type `exmc -r true` convert markdown table string to excel string
 
 ## Requirements
 
@@ -39,6 +39,8 @@ $ pip install exmc
 
 ## Usage
 
+- `exmc`
+
 copy content from excel sheet
 
 type `exmc` in terminal/cmd,
@@ -47,7 +49,15 @@ then markdown table string will copy to clipboard automatically
 
 so you can paste in markdown file
 
-Please see the [Command-line Reference] for details.
+- `exmc -r true`
+
+use `-r` flag convert markdown table string to excel string
+
+so, you need copy raw markdown table string
+
+then paste to excel file
+
+
 
 ## Contributing
 
