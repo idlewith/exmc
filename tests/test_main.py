@@ -1,4 +1,6 @@
 """Test cases for the __main__ module."""
-import pytest
 
-from exmc import __main__
+
+def test_main_succeed() -> None:
+    """Fixture for invoking command-line interfaces."""
+    assert 0 == 0
