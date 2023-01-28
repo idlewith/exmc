@@ -27,7 +27,6 @@
 
 ## Requirements
 
-
 - `clipboard`
 
 ## Installation
