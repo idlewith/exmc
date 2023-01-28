@@ -1,5 +1,6 @@
 """The main functions to convert excel to markdown or markdown to excel."""
 from argparse import Namespace
+from typing import List
 
 import clipboard
 
@@ -12,7 +13,7 @@ DOUBLE_QUOTE = '"'
 SEPERATOR_VERTICAL_LINE = "|"
 
 
-def join_with_vertical_line(cells: list[str]) -> str:
+def join_with_vertical_line(cells: List[str]) -> str:
     """Join with vertical line."""
     cell_list = []
     for cell in cells:
