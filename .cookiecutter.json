@@ -1,0 +1,14 @@
+{
+  "_output_dir": "/Users/new/code",
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "idlewith",
+  "copyright_year": "2023",
+  "development_status": "Development Status :: 4 - Beta",
+  "email": "newellzhou@163.com",
+  "friendly_name": "Excel Markdown Converter",
+  "github_user": "idlewith",
+  "license": "MIT",
+  "package_name": "exmc",
+  "project_name": "exmc",
+  "version": "0.0.1"
+}
