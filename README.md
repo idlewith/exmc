@@ -38,6 +38,13 @@ $ pip install exmc
 
 ## Usage
 
+
+demo video below
+
+https://user-images.githubusercontent.com/61551277/215328281-79cb339f-8d92-4c11-91a3-a6ba54642c24.mp4
+
+the details below
+
 - `exmc`
 
 copy content from excel sheet
