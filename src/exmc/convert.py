@@ -31,7 +31,7 @@ def excel2markdown(args: Namespace) -> None:
     """Excel to markdown."""
     content = clipboard.paste()
 
-    if args.debug == "true":
+    if args.debug:
         print([content])
 
     rows = content.split(BREAK_RN)
@@ -62,7 +62,7 @@ def markdown2excel(args: Namespace) -> None:
     """Markdown to excel."""
     content = clipboard.paste()
 
-    if args.debug == "true":
+    if args.debug:
         print([content])
 
     if BREAK_RN in content:
@@ -88,7 +88,7 @@ def markdown2excel(args: Namespace) -> None:
 
 def run(args: Namespace) -> None:
     """Execute convert functions by args.reverse."""
-    if args.reverse == "true":
+    if args.reverse:
         markdown2excel(args)
     else:
         excel2markdown(args)

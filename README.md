@@ -22,7 +22,7 @@
 
 - copy excel content from clipboard, so you need paste excel content to clipboard
 - type `exmc` to convert excel string to markdown table string
-- type `exmc -r true` convert markdown table string to excel string
+- type `exmc -r` convert markdown table string to excel string
 
 ## Requirements
 
@@ -54,7 +54,9 @@ then markdown table string will copy to clipboard automatically
 
 so you can paste in markdown file
 
-- `exmc -r true`
+- `exmc -r`
+
+-r stands for reverse
 
 use `-r` flag convert markdown table string to excel string
 
