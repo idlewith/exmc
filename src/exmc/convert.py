@@ -17,14 +17,12 @@ def join_with_vertical_line(cells: List[str]) -> str:
     """Join with vertical line."""
     cell_list = []
     for cell in cells:
-        cell = cell.strip()
-        if cell:
-            if BREAK_N in cell and BREAK_RN not in cell and DOUBLE_QUOTE in cell:
-                cell_list.append(
-                    cell.replace(BREAK_N, BREAK_BR).replace(DOUBLE_QUOTE, "")
-                )
-            else:
-                cell_list.append(cell)
+        if BREAK_N in cell and BREAK_RN not in cell and DOUBLE_QUOTE in cell:
+            cell_list.append(
+                cell.replace(BREAK_N, BREAK_BR).replace(DOUBLE_QUOTE, "")
+            )
+        else:
+            cell_list.append(cell)
     rows = f"|{'|'.join(cell_list)}|"
     return rows
 
@@ -51,11 +49,9 @@ def excel2markdown(args: Namespace) -> None:
     markdown_list.append(title_seperator)
 
     for row in rows_data:
-        row = row.strip()
-        if row:
-            row_list = row.split(BREAK_CELL)
-            row = join_with_vertical_line(row_list)
-            markdown_list.append(row)
+        row_list = row.split(BREAK_CELL)
+        row = join_with_vertical_line(row_list)
+        markdown_list.append(row)
 
     markdown_str = f"{BREAK_N}".join(markdown_list)
     clipboard.copy(markdown_str)
