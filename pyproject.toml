@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "exmc"
-version = "0.0.2"
+version = "0.0.3"
 description = "Excel Markdown Converter"
 authors = ["idlewith <newellzhou@163.com>"]
 license = "MIT"
